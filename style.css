@@ -1,0 +1,200 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600;  /* Laranja */
+}
+
+/* Seção Inicial */
+#home {
+    background-color: #ff6600;  /* Laranja */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#inscreverBtn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#inscreverBtn:hover {
+    background-color: #ff6600;
+}
+
+/* Seção de Planos */
+#planos {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#planos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.plano {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.plano h3 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.plano p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.plano button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plano button:hover {
+    background-color: #ff4400;
+}
+
+/* Estilos para o formulário */
+.formulario {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.formulario input,
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #e65c00;
+}
+
+/* Mensagem de sucesso */
+.mensagem-sucesso {
+    font-size: 1.2rem;
+    color: green;
+    margin-top: 10px;
+}
+
+/* Contato */
+#contato {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contato button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Conheça a gente */
+#sobre {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.img-fotos{ 
+    width: 500px;
+    margin: 0 auto;
+
+}

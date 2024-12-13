@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motive Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Conheça a gente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Inicial -->
+        <section id="home">
+            <h1>Bem-vindo à Motive Gym</h1>
+            <p>Motive-se, Supere-se</p>
+            <button id="inscreverBtn">Inscreva-se agora!</button>
+        </section>
+
+        <!-- Seção de Planos -->
+        <section id="planos">
+            <h2>Nossos Planos</h2>
+            <div class="planos-container">
+                <!-- Plano Básico -->
+                <div class="plano">
+                    <h3>Plano Básico</h3>
+                    <p>R$ 99,90/mês</p>
+                    <button class="assinar-btn" onclick="alterarPlano('Plano Básico', this)">Assine</button>
+                    <div class="formulario" id="formPlanoBásico" style="display: none;">
+                        <label for="nomeBásico">Nome:</label>
+                        <input type="text" id="nomeBásico" placeholder="Digite seu nome" required>
+                        <label for="telefoneBásico">Número de Telefone:</label>
+                        <input type="tel" id="telefoneBásico" placeholder="Digite seu telefone" required>
+                        <button onclick="enviarFormulario('Plano Básico')">Enviar</button>
+                        
+
+                    </div>
+                    <p id="mensagemPlanoBásico" class="mensagem-sucesso" style="display: none;">Dados enviados com sucesso!</p>
+                </div>
+
+                <!-- Plano Premium -->
+                <div class="plano">
+                    <h3>Plano Premium</h3>
+                    <p>R$ 149,90/mês</p>
+                    <button class="assinar-btn" onclick="alterarPlano('Plano Premium', this)">Assine</button>
+                    <div class="formulario" id="formPlanoPremium" style="display: none;">
+                        <label for="nomePremium">Nome:</label>
+                        <input type="text" id="nomePremium" placeholder="Digite seu nome" required>
+                        <label for="telefonePremium">Número de Telefone:</label>
+                        <input type="tel" id="telefonePremium" placeholder="Digite seu telefone" required>
+                        <button onclick="enviarFormulario('Plano Premium')">Enviar</button>
+                    </div>
+                    <p id="mensagemPlanoPremium" class="mensagem-sucesso" style="display: none;">Dados enviados com sucesso!</p>
+                </div>
+
+                <!-- Plano VIP -->
+                <div class="plano">
+                    <h3>Plano VIP</h3>
+                    <p>R$ 199,90/mês</p>
+                    <button class="assinar-btn" onclick="alterarPlano('Plano VIP', this)">Assine</button>
+                    <div class="formulario" id="formPlanoVIP" style="display: none;">
+                        <label for="nomeVIP">Nome:</label>
+                        <input type="text" id="nomeVIP" placeholder="Digite seu nome" required>
+                        <label for="telefoneVIP">Número de Telefone:</label>
+                        <input type="tel" id="telefoneVIP" placeholder="Digite seu telefone" required>
+                        <button onclick="enviarFormulario('Plano VIP')">Enviar</button>
+                    </div>
+                    <p id="mensagemPlanoVIP" class="mensagem-sucesso" style="display: none;">Dados enviados com sucesso!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <form id="formContato" onsubmit="return false;">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Seção Conheça a Gente -->
+        <section id="sobre">
+            <h2>Conheça a Motive Gym</h2>
+            <p>Somos uma academia inovadora que busca proporcionar um ambiente motivador para todas as idades e níveis de condicionamento físico. Nossa missão é ajudá-lo a alcançar seus objetivos, superar seus limites e transformar sua vida!</p>
+        </section>
+       
+       <img class="img-fotos" src="imagens/imagen4.jpg" alt="">
+        <img src="imagens/imagen5.jpg" alt="">
+            <img src="imagem1.avif" alt="">
+<img src="imagens/imagen2.jpg" alt="">
+<img src="imagens/imagen3.jpg" alt="">
+
+    <footer>
+        <p>&copy; 2024 Motive Gym | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
